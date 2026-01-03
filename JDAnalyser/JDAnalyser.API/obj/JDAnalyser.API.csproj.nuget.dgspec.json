@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\JD-Analyser\\JD-Analyser\\JDAnalyser.API\\JDAnalyser.API.csproj": {}
+    "C:\\Code\\JD-Analyser\\JDAnalyser\\JDAnalyser.API\\JDAnalyser.API.csproj": {}
   },
   "projects": {
-    "C:\\Code\\JD-Analyser\\JD-Analyser\\JDAnalyser.API\\JDAnalyser.API.csproj": {
+    "C:\\Code\\JD-Analyser\\JDAnalyser\\JDAnalyser.API\\JDAnalyser.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\JD-Analyser\\JD-Analyser\\JDAnalyser.API\\JDAnalyser.API.csproj",
+        "projectUniqueName": "C:\\Code\\JD-Analyser\\JDAnalyser\\JDAnalyser.API\\JDAnalyser.API.csproj",
         "projectName": "JDAnalyser.API",
-        "projectPath": "C:\\Code\\JD-Analyser\\JD-Analyser\\JDAnalyser.API\\JDAnalyser.API.csproj",
+        "projectPath": "C:\\Code\\JD-Analyser\\JDAnalyser\\JDAnalyser.API\\JDAnalyser.API.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\JD-Analyser\\JD-Analyser\\JDAnalyser.API\\obj\\",
+        "outputPath": "C:\\Code\\JD-Analyser\\JDAnalyser\\JDAnalyser.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
