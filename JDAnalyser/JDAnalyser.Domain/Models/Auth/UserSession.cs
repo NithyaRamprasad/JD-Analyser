@@ -1,7 +1,7 @@
 ﻿namespace JDAnalyser.Domain.Models.Auth
 {
     public record UserSession(
-        string UserId,
+        int UserId,
         IReadOnlyList<string> Roles
     );
 }

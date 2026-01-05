@@ -1,10 +1,10 @@
 ﻿using JDAnalyser.Application.Interfaces.Persistence;
 using JDAnalyser.Domain.Models.Job;
-using JDAnalyser.Infrastructure.Persistence.Context;
+using JDAnalyser.Infrastructure.Persistence.Persistence.Context;
 using MapsterMapper;
 using Microsoft.EntityFrameworkCore;
 
-namespace JDAnalyser.Infrastructure.Persistence.Repositories
+namespace JDAnalyser.Infrastructure.Persistence.Persistence.Repositories
 {
     public class JobAnalysisRepository(JDAnalyserDbContext jDAnalyserDbContext, IMapper mapper) : IJobAnalysisRepository
     {

@@ -1,8 +1,8 @@
 ﻿using JDAnalyser.Domain.Models.Job;
-using JDAnalyser.Infrastructure.Persistence.Entities;
+using JDAnalyser.Infrastructure.Persistence.Persistence.Entities;
 using Mapster;
 
-namespace JDAnalyser.Infrastructure.Persistence.Mapper
+namespace JDAnalyser.Infrastructure.Persistence.Persistence.Mapper
 {
     public class MapsterConfig : IRegister
     {

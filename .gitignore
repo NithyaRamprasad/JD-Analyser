@@ -2,16 +2,19 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/JDAnalyser/JDAnalyser.API/bin/Debug/net9.0
+/JDAnalyser/JDAnalyser.API/bin
 /JDAnalyser/.vs
-/JDAnalyser/JDAnalyser.Application/bin/Debug/net9.0
+/JDAnalyser/JDAnalyser.Application/bin
 /JDAnalyser/JDAnalyser.Application/obj
-/JDAnalyser/JDAnalyser.Domain/bin/Debug/net9.0
+/JDAnalyser/JDAnalyser.Domain/bin
 /JDAnalyser/JDAnalyser.Domain/obj
-/JDAnalyser/JDAnalyser.Infrastructure.AI/bin/Debug/net9.0
+/JDAnalyser/JDAnalyser.Infrastructure.AI/bin
 /JDAnalyser/JDAnalyser.Infrastructure.AI/obj
-/JDAnalyser/JDAnalyser.Infrastructure.Cache/bin/Debug/net9.0
+/JDAnalyser/JDAnalyser.Infrastructure.Cache/bin
 /JDAnalyser/JDAnalyser.Infrastructure.Cache/obj
-/JDAnalyser/JDAnalyser.Infrastructure.Persistence/bin/Debug/net9.0
+/JDAnalyser/JDAnalyser.Infrastructure.Persistence/bin
 /JDAnalyser/JDAnalyser.Infrastructure.Persistence/obj
-/JDAnalyser/JDAnalyser.API/obj/Debug/net9.0
+/JDAnalyser/JDAnalyser.API/bin
+/JDAnalyser/JDAnalyser.API/obj
+/JDAnalyser/JDAnalyser.Infrastructure.Core/bin
+/JDAnalyser/JDAnalyser.Infrastructure.Core/obj

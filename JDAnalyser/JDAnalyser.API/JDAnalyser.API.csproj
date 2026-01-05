@@ -7,15 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Mapster" Version="7.4.0" />
-	<PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.11" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\JDAnalyser.Application\JDAnalyser.Application.csproj" />
-    <ProjectReference Include="..\JDAnalyser.Infrastructure.Cache\JDAnalyser.Infrastructure.Cache.csproj" />
-    <ProjectReference Include="..\JDAnalyser.Infrastructure.Persistence\JDAnalyser.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\JDAnalyser.Infrastructure.COre\JDAnalyser.Infrastructure.Core.csproj" />
   </ItemGroup>
 
 </Project>

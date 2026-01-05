@@ -2,6 +2,7 @@
 using JDAnalyser.Application.Interfaces.Persistence;
 using JDAnalyser.Application.Request.Auth;
 using JDAnalyser.Domain.Models.Auth;
+using JDAnalyser.Domain.Models.User;
 
 namespace JDAnalyser.Application.Services.Auth
 {
@@ -12,10 +13,10 @@ namespace JDAnalyser.Application.Services.Auth
 
         public async Task<string> GetLoginDetails(LoginRequest request)
         {
-            //_userRepository.GetUserDetails(request.Username);
+            UserModel user = await _userRepository.GetUserDetails(request.EmailId);
 
             var sessionId = await _sessions.CreateAsync(
-                new UserSession("123", new[] { "Admin" }));
+                new UserSession(user.UserId, new[] { user.RoleName }));
 
             return sessionId;
         }

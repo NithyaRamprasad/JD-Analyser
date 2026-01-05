@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace JDAnalyser.Infrastructure.Persistence.Entities;
+namespace JDAnalyser.Infrastructure.Persistence.Persistence.Entities;
 
 public partial class MsUser
 {

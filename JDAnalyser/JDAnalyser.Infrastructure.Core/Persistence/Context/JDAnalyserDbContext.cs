@@ -1,7 +1,7 @@
-﻿using JDAnalyser.Infrastructure.Persistence.Entities;
+﻿using JDAnalyser.Infrastructure.Persistence.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace JDAnalyser.Infrastructure.Persistence.Context;
+namespace JDAnalyser.Infrastructure.Persistence.Persistence.Context;
 
 public partial class JDAnalyserDbContext : DbContext
 {

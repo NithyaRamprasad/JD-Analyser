@@ -29,7 +29,7 @@ namespace JDAnalyser.API.Auth
             // 3️ Create claims
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, session.UserId)
+                new Claim(ClaimTypes.NameIdentifier, session.UserId.ToString())
             };
 
             foreach (var role in session.Roles)
