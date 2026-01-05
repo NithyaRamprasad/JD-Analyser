@@ -1,10 +1,38 @@
+using JDAnalyser.API.Auth;
+using JDAnalyser.Application.Services.Persistence;
+using JDAnalyser.Infrastructure.Cache;
+using JDAnalyser.Infrastructure.Persistence;
+using Mapster;
+using MapsterMapper;
+using Microsoft.AspNetCore.Authentication;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// mapster
+builder.Services.AddMapster(); 
+var config = new TypeAdapterConfig();
+config.Scan(typeof(Program).Assembly);
+builder.Services.AddSingleton(config);
+builder.Services.AddScoped<IMapper, ServiceMapper>();
+
+builder.Services.AddPersistence(builder.Configuration);
+
+builder.Services.AddScoped<JDAnalysisService>();
+
+// Redis connection
+builder.Services.AddRedisCache(builder.Configuration);
+
+//Authentication
+builder.Services.AddAuthentication("Session")
+    .AddScheme<AuthenticationSchemeOptions, SessionAuthenticationHandler>("Session", null);
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -16,6 +44,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
