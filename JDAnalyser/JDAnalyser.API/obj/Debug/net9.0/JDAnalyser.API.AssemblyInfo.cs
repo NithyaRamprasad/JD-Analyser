@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JDAnalyser.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d00ef92b257bebd7dca8d78c19877625bbb0e199")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d67f89d29b6dc51d7bdea6f2bc14f73676d0ab7")]
 [assembly: System.Reflection.AssemblyProductAttribute("JDAnalyser.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JDAnalyser.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
